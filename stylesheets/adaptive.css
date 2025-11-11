@@ -1,0 +1,84 @@
+@media screen and (max-width: 1439px) {
+  #about section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  #about section {
+    flex-direction: column;
+  }
+  #about #secondSection {
+    flex-direction: column-reverse;
+  }
+  #about section img {
+    width: 100%;
+  }
+  #about section div {
+    width: 100%;
+  }
+  #about #firstSection,
+  #about #secondSection,
+  #about #thirdSection {
+    margin: 4vw 0;
+  }
+  #firstSection div:nth-of-type(1),
+  #secondSection div:nth-of-type(2),
+  #thirdSection div:nth-of-type(1) {
+    padding: 0 18vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  img,
+  hr {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  ol,
+  blockquote,
+  hr,
+  #about #fourthSection {
+    /* вариант 1: ширина уже родителя + margin: 0 auto */
+    /* width: 94%; */
+
+    /* вариант 2: ширина 100% + отступы через padding */
+    width: 100%;
+    padding: 0 30px;
+  }
+  blockquote::before {
+    left: 0;
+  }
+  #firstSection div:nth-of-type(1),
+  #secondSection div:nth-of-type(2),
+  #thirdSection div:nth-of-type(1) {
+    padding: 0 30px;
+  }
+  #fourthSection h2,
+  #fourthSection p {
+    text-align: left;
+  }
+  #about #fourthSection {
+    margin-bottom: 10vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menubar {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .menubar a {
+    font-size: 20px;
+  }
+}
